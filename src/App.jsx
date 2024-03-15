@@ -7,7 +7,6 @@ import Marquees from "./component/Marquees";
 import Cards from "./component/Cards";
 import Footer from "./component/Footer";
 import Lenis from "@studio-freight/lenis";
-import Cursor from "./component/Cursor";
 
 const App = () => {
   function lenisFn() {
@@ -26,7 +25,6 @@ const App = () => {
 
   return (
     <div className="min-h-screen w-full bg-[#161618] text-white">
-      <Cursor />
       <Navbar />
       <Work />
       <Stripes />
