@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "satoshi variable";
+    src: url(./assets/fonts/satoshi-variable.woff2);
+}
+
+* { font-family: "satoshi variable"; }
+
+
+.product:hover {
+    .btn {
+        opacity: 1;
+    }
+    img {
+        opacity: 1;
+    }
+}
