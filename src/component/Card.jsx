@@ -1,10 +1,11 @@
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 const Card = ({ data }) => {
   const { heading1, heading2, width, start, hoverColor, bgco } = data;
   const [padding, setPadding] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <motion.div
@@ -26,8 +27,18 @@ const Card = ({ data }) => {
             <h1 className="text-8xl whitespace-nowrap font-semibold">
               Start a project
             </h1>
-            <button className="border px-7 py-3 mt-4 rounded-full font-semibold text-base">
-              Contact Us
+            <button
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            className="border overflow-hidden flex flex-col px-7 py-3 h-12 w-36 mt-4 rounded-full font-semibold text-base">
+              <motion.span
+              animate={{y: isHovered ? "-150%" : "0"}}
+              transition={{ease: easeInOut}}
+              className="whitespace-nowrap">Contact Us</motion.span>
+              <motion.span
+              animate={{y: isHovered ? "-100%" : "50%"}}
+              transition={{ease: easeInOut}}
+              className="whitespace-nowrap">Contact Us</motion.span>
             </button>
           </>
         ) : (
