@@ -1,8 +1,13 @@
-# React + Vite
+# About the project
+=> Clone of <a href="https://www.refokus.com">refokus.com</a>.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**(This project is crated via using React)**
 
-Currently, two official plugins are available:
+## Things I have used 
+- React
+- Lenis
+- Framer Motion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+  ## Why this project is special?
+  <P>Because this project contains smooth scrolling, micro-interactions, and many more.</P>
